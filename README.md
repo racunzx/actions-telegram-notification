@@ -1,0 +1,18 @@
+# actions-telegram-notification
+
+This action send a notification about your action runs.
+
+## Usage
+
+See [action.yml](action.yml)
+
+Basic:
+
+```yaml
+- uses: haishanh/actions-telegram-notification@v1
+  with:
+    notification-token: ${{ secrets.TGB_JWT_TOKEN }}
+    job-status: ${{ job.status }}
+```
+
+You can obtain a `TGB_JWT_TOKEN` by sending the command `/token` to [the (not-GitHub-official) GitHub Actions Notification bot](https://t.me/ghactionsbot). After you get the token, goto your repo "Settings" page, select "Secrets" and add it as a secret environment variables there.

@@ -1,0 +1,39 @@
+---
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: tsconfig.json
+  sourceType: module
+
+extends:
+  - 'plugin:@typescript-eslint/recommended'
+  - 'prettier'
+  - prettier/@typescript-eslint
+
+plugins:
+  - simple-import-sort
+
+env:
+  node: true
+  jest: true
+
+globals:
+  __DEV__: true
+
+rules:
+  '@typescript-eslint/interface-name-prefix': 'off'
+  '@typescript-eslint/explicit-function-return-type': 'off'
+  '@typescript-eslint/no-explicit-any': 'off'
+  '@typescript-eslint/camelcase': 'off'
+  '@typescript-eslint/no-unused-vars':
+    - 'error'
+    - argsIgnorePattern: '^_'
+  '@typescript-eslint/no-use-before-define':
+    - error
+    - functions: false
+  # disable this temporarily since we have a lot of JS files
+  # and typescript-eslint runs against JS files too
+  '@typescript-eslint/explicit-module-boundary-types': off
+  simple-import-sort/sort: error
+#   quotes: ["error", "single"]
+#   strict: ["error", "never"]
+#   no-console: "warn"

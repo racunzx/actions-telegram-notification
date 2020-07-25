@@ -1,0 +1,29 @@
+name: "Send telegram notification"
+description: "Send notification about your GitHub actions job status via telegram"
+author: "Haishan"
+
+inputs:
+  notification-token:
+    description: "a notification token obtain by chatting with https://t.me/ghactionsbot"
+    required: true
+  job-status:
+    description: "Job status it's recommended to use job.status here"
+    required: false
+  bot-token:
+    description: |
+      Supply bot-token here when you want to use your own bot.
+      A bot-token is a string that looks like 1382139262:ABF4535Sm3J12gQcUJSYv79SGbZ6_ULACrw
+      https://core.telegram.org/bots#3-how-do-i-create-a-bot
+    required: false
+  chat-id:
+    description: |
+      The chat where the notification will been send to.
+      You don't need to provide this when using notification-token, since that token already contains information about the chat-id.
+    required: false
+
+runs:
+  using: "node12"
+  main: "dist/main/index.js"
+branding:
+  icon: "message-circle"
+  color: "gray-dark"

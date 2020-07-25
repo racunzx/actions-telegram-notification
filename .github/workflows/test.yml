@@ -1,0 +1,20 @@
+name: "build-test"
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - master
+      - "releases/*"
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          yarn
+          yarn bundle
+      - uses: ./
+        with:
+          notification-token: ${{ secrets.TGB_JWT_TOKEN }}
+          job-status: ${{ job.status }}
