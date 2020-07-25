@@ -1,5 +1,7 @@
 # actions-telegram-notification
 
+![build-test](https://github.com/haishanh/actions-telegram-notification/workflows/build-test/badge.svg)
+
 This action send a notification about your action runs.
 
 ## Usage
