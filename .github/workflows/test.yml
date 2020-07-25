@@ -16,5 +16,5 @@ jobs:
           yarn bundle
       - uses: ./
         with:
-          notification-token: ${{ secrets.TGB_JWT_TOKEN }}
+          notification-token: ${{ secrets.NOTIFICATION_TOKEN }}
           job-status: ${{ job.status }}

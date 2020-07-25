@@ -11,8 +11,8 @@ Basic:
 ```yaml
 - uses: haishanh/actions-telegram-notification@v1
   with:
-    notification-token: ${{ secrets.TGB_JWT_TOKEN }}
+    notification-token: ${{ secrets.NOTIFICATION_TOKEN }}
     job-status: ${{ job.status }}
 ```
 
-You can obtain a `TGB_JWT_TOKEN` by sending the command `/token` to [the (not-GitHub-official) GitHub Actions Notification bot](https://t.me/ghactionsbot). After you get the token, goto your repo "Settings" page, select "Secrets" and add it as a secret environment variables there.
+You can obtain a `NOTIFICATION_TOKEN` by sending the command `/token` to [the (not-GitHub-official) GitHub Actions Notification bot](https://t.me/ghactionsbot). After you get the token, goto your repo "Settings" page, select "Secrets" and add it as a secret environment variables there.
