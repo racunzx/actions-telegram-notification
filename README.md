@@ -4,6 +4,10 @@
 
 This action send a notification about your action runs.
 
+<p>
+  <img alt="Telegram Notification Screenshots" width="600" height="330" src="https://user-images.githubusercontent.com/1166872/88460933-67506f00-ced2-11ea-9cbb-4919ff88497a.jpg">
+</p>
+
 ## Usage
 
 See [action.yml](action.yml)

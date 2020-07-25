@@ -21,7 +21,7 @@ const jwt = env.JWT;
       actor: "haishanh",
       ref: "refs/heads/master",
       sha: "acd0816c3dbae740ca163ebe5bfac4afed28d663",
-      repo: { owner: "facebook", repo: "react" },
+      repo: { owner: "haishanh", repo: "foo" },
     },
     // "success"
     "failure"
