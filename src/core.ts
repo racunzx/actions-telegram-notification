@@ -74,7 +74,7 @@ function composeMessageText(context: Ctx, jobStatus: string | null): string {
 
 ${workflowE} ${jobE} ${status}
 
-Triggered by ${actorE} with a ${eventNameE}
+Triggered by ${actorE} with a ${eventNameE} event
 
 [View details](${link})
 `;
