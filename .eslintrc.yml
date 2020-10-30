@@ -33,7 +33,7 @@ rules:
   # disable this temporarily since we have a lot of JS files
   # and typescript-eslint runs against JS files too
   '@typescript-eslint/explicit-module-boundary-types': off
-  simple-import-sort/sort: error
+  simple-import-sort/imports: error
 #   quotes: ["error", "single"]
 #   strict: ["error", "never"]
 #   no-console: "warn"
