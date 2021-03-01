@@ -67,7 +67,7 @@ function composeMessageText(context: Ctx, jobStatus: string | null): string {
   const jobE = escapeEntities(job);
   const actorE = escapeEntities(actor);
   const eventNameE = escapeEntities(eventName);
-  const link = `https://github.com/haishanh/actions-priv/actions/runs/${runId}`;
+  const link = `https://github.com/${owner}/${repo}/actions/runs/${runId}`;
 
   const text = `
 *${a}* ${shortRefE}\\(${shortSha}\\)
