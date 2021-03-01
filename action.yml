@@ -23,7 +23,7 @@ inputs:
 
 runs:
   using: "node12"
-  main: "dist/main/index.js"
+  main: "dist/main.js"
 branding:
   icon: "message-circle"
   color: "gray-dark"
